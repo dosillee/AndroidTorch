@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black" >
+
+    <ToggleButton
+        android:id="@+id/flashlight_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/light_switcher"
+        android:clickable="false"
+        android:textOff=""
+        android:textOn="" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flashlight_header"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/flashlight_body" >
+
+        <ToggleButton
+            android:id="@+id/flashlight_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/main_switcher"
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <SurfaceView
+        android:id="@+id/dummy_surface"
+        android:layout_width="1dp"
+        android:layout_height="1dp" />
+
+</RelativeLayout>
